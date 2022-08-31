@@ -360,7 +360,8 @@ span.fr-img-caption.fr-view {
       float: right;
       margin: 5px 0 5px 5px;
       max-width: calc(100% - 5px); }
-/*end-commonstyles library*/@charset "UTF-8";
+/*end-commonstyles library*/
+
 .u-hidden-block {
   visibility: hidden!important;
 }
@@ -19423,7 +19424,7 @@ a.pswp__share--download:hover {
     opacity: 1;
   }
 }
-@keyframes zoomInUp {
+/* @keyframes zoomInUp {
   from {
     opacity: 0;
     transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 1000px, 0);
@@ -19437,8 +19438,8 @@ a.pswp__share--download:hover {
   to {
     opacity: 1;
   }
-}
-@keyframes customAnimationIn {
+} */
+/* @keyframes customAnimationIn {
   from {
     transform-origin: center center;
     transform: translate3d(var(--animation-custom_in-translate_x), var(--animation-custom_in-translate_y), 0) scale3d(var(--animation-custom_in-scale), var(--animation-custom_in-scale), var(--animation-custom_in-scale)) rotate3d(0, 0, 1, var(--animation-custom_in-rotate));
@@ -19449,8 +19450,8 @@ a.pswp__share--download:hover {
     transform: translate3d(-50% !important, -50% !important, 0);
     opacity: 1;
   }
-}
-@keyframes customAnimationOut {
+} */
+/* @keyframes customAnimationOut {
   from {
     transform-origin: center center;
     transform: translate3d(-50% !important, -50% !important, 0);
@@ -19461,7 +19462,7 @@ a.pswp__share--download:hover {
     transform: translate3d(var(--animation-custom_in-translate_x), var(--animation-custom_in-translate_y), 0) scale3d(var(--animation-custom_in-scale), var(--animation-custom_in-scale), var(--animation-custom_in-scale)) rotate3d(0, 0, 1, var(--animation-custom_in-rotate));
     opacity: var(--animation-custom_in-opacity);
   }
-}
+} */
 .customAnimationIn {
   animation-name: customAnimationIn;
 }
