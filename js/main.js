@@ -43,4 +43,10 @@ for (let i = 0; i < menuLength; i++) {
 //=========== Active navbar Link in multi pages =============
 
 
+function showDrop(id) {
+  $(`#dropMenu${id}`).css({ "display": "flex" })
 
+}
+function hideDrop(id) {
+  $(`#dropMenu${id}`).css("display", "none");
+}
