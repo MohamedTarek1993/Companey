@@ -4,7 +4,7 @@
   --color-primary: #3739c2;
   --color-secound: #5b6152;
   --color-text: #1c2410;
-  --color-pargraph: #7f7f73;
+  --color-pargraph: rgba(29, 29, 36, 0.75);
 }
 
 @font-face {
@@ -2396,8 +2396,13 @@ textarea.form-control {
   transition: 0.25s all ease-in-out;
 }
 .contact_us .button .first:hover {
-  background-color: transparent;
-  color: var(--color-primary);
+  background: transparent;
+    color: #f9004d;
+    box-shadow: 0 10px 15px 0 rgb(0 0 0 / 10%);
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+    border: 2px solid #f9004d;
+
 }
 
 .grid_information {
@@ -3629,3 +3634,77 @@ footer .footer_fir .inner .button .first:hover {
   right: 0;
 }
 /* hamburger icon */
+/* contact page */
+.information_contact {
+  padding: 10% 0;
+  position: relative;
+  background-color: #f8f9fc;
+}
+.information_contact .rn-address {
+  margin-top: 30px;
+  border: 1px solid #ebebeb;
+  border-radius: 10px;
+  background: #fff;
+  padding: 54px 40px 50px;
+  position: relative;
+}
+.information_contact .rn-address .icon {
+  border: 1px solid #ebebeb;
+  width: 78px;
+  height: 78px;
+  color: var(--color-primary);
+  line-height: 73px;
+  text-align: center;
+  border-radius: 100%;
+  background: #fff;
+  font-size: 28px;
+  position: absolute;
+  top: -43px;
+  left: 47px;
+  --webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.information_contact .rn-address:hover .icon {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: #fff;
+}
+.information_contact .rn-address .inner h4 {
+  font-size: 1.2rem;
+  font-family: "bold";
+  color: var(--color-text);
+  margin: 0 0 15px;
+}
+.information_contact .rn-address .inner p {
+  font-size: 18px;
+  font-family: "regular";
+  margin-bottom: 0;
+  color: rgba(29, 29, 36, 0.75);
+  --webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.information_contact .rn-address .inner p:hover ,.information_contact .rn-address .inner p:hover a {
+  color: var(--color-primary);
+}
+.information_contact .rn-address .inner p a {
+  color: var(--color-pargraph);
+}
+.contact_us{
+  padding: 5% 0;
+}
+.contact_us .main_title{
+  margin-bottom: 50px;
+text-align: left;
+}
+.contact_us .main_title h1{
+  font-size: 3rem;
+  font-family: 'bold';
+  color: var(--color-text);
+}
+.contact_us .main_title p{
+  font-size: 2rem;
+  color: ;
+}
+
+
+/* contact page */
