@@ -64,63 +64,65 @@
     </div>
   </div>
   <!---------------------- stikey header ---------------------->
-  <header class="u-clearfix u-header u-header" id="sec-15bd">
-    <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
-      <a href="https://nicepage.com" class="u-image u-logo u-image-1">
-        <img src="images/default-logo.png" class="u-logo-image u-logo-image-1">
+  <!---------------------- navbar ---------------------->
+  <nav class="navbar home navbar-expand-lg" id="navbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <!-- <img src="image/logo.png" alt="logo"> -->
+        Logo
       </a>
-      <nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1">
-        <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px;">
-          <a class="u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
-            href="#">
-            <svg class="u-svg-link" viewBox="0 0 24 24">
-              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use>
-            </svg>
-            <svg class="u-svg-content" version="1.1" id="menu-hamburger" viewBox="0 0 16 16" x="0px" y="0px"
-              xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
-              <g>
-                <rect y="1" width="16" height="2"></rect>
-                <rect y="7" width="16" height="2"></rect>
-                <rect y="13" width="16" height="2"></rect>
-              </g>
-            </svg>
-          </a>
-        </div>
-        <div class="u-nav-container">
-          <ul class="u-nav u-unstyled u-nav-1">
-            <li class="u-nav-item"><a
-                class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
-                href="Home.html" style="padding: 10px 20px;">Home</a>
-            </li>
-            <li class="u-nav-item"><a
-                class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
-                href="About.html" style="padding: 10px 20px;">About</a>
-            </li>
-            <li class="u-nav-item"><a
-                class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
-                href="Contact.html" style="padding: 10px 20px;">Contact</a>
-            </li>
-          </ul>
-        </div>
-        <div class="u-nav-container-collapse">
-          <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
-            <div class="u-inner-container-layout u-sidenav-overflow">
-              <div class="u-menu-close"></div>
-              <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2">
-                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="Home.html">Home</a>
-                </li>
-                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="About.html">About</a>
-                </li>
-                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="Contact.html">Contact</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
-        </div>
-      </nav>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html"> About Us</a>
+          </li>
+          <li class="nav-item" onmouseenter="showDrop(1)" onmouseleave="hideDrop(1)">
+            <a class="nav-link" href="#"> Projects
+              <span><i class="bi bi-caret-down-fill"></i></span>
+            </a>
+            <!-- drop menu -->
+            <ul class="drop-menu" id="dropMenu1">
+              <li>
+                <a class="head-light" href="project.html">Project 1</a>
+              </li>
+              <li>
+                <a class="head-light" href="#">Project 2 </a>
+              </li>
+              <li>
+                <a class="head-light" href="#">Project 3</a>
+              </li>
+              <li>
+                <a class="head-light" href="#">Project 4</a>
+              </li>
+              <li>
+                <a class="head-light" href="#">Project5</a>
+              </li>
+            </ul>
+            <!-- drop menu -->
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="service.html"> Service</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="contact-us.html"> Contact us </a>
+          </li>
+        </ul>
+
+
+
+      </div>
     </div>
-  </header>
+  </nav>
+
+  <!---------------------- navbar ---------------------->
 
   <!-- hero section -->
   <section class="u-align-right u-clearfix u-image u-shading u-section-1" id="carousel_2dd1">
@@ -144,41 +146,35 @@
 
 
   <!-- about us section -->
-  <section data-aos="fade-up" data-aos-duration="3000" data-aos-easing="linear"
-    class="u-align-center-lg u-align-center-md u-align-center-sm u-align-center-xs u-clearfix u-section-6"
-    id="carousel_c0c1">
-    <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
-      <img class="u-image u-image-round u-radius-20 u-image-1" src="images/ret-min.jpg" data-image-width="1600"
-        data-image-height="1067">
-      <div class="u-shape u-shape-svg u-text-palette-1-base u-shape-1 img_about">
-        <svg class="img_about u-svg-link" preserveAspectRatio="none" viewBox="0 0 160 160" style="">
-          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-db78"></use>
-        </svg>
-        <svg class="u-svg-content" viewBox="0 0 160 160" x="0px" y="0px" id="svg-db78">
-          <path d="M114.3,152.3l38-38C144.4,130.9,130.9,144.4,114.3,152.3z M117.1,9.1l-108,108c0.8,1.6,1.7,3.2,2.7,4.8l110-110
- C120.3,10.9,118.7,10,117.1,9.1z M97.5,2L2,97.5c0.4,2,1,4,1.5,5.9l99.9-99.9C101.5,2.9,99.5,2.4,97.5,2z M80,160c2,0,4-0.1,5.9-0.2
- l73.9-73.9c0.1-2,0.2-3.9,0.2-5.9c0-0.6,0-1.2,0-1.9L78.1,160C78.8,160,79.4,160,80,160z M34.9,146.1c1.5,1,3,2,4.6,2.9L149,39.5
- c-0.9-1.6-1.9-3.1-2.9-4.6L34.9,146.1z M132.7,19.8L19.8,132.7c1.2,1.3,2.3,2.6,3.6,3.9L136.6,23.4C135.3,22.2,134,21,132.7,19.8z
-  M59.6,157.4l97.8-97.8c-0.5-1.9-1.1-3.8-1.7-5.7L53.9,155.6C55.8,156.3,57.7,156.9,59.6,157.4z M7.6,45.9L45.9,7.6
- C29.1,15.5,15.5,29.1,7.6,45.9z M80,0c-2.6,0-5.1,0.1-7.6,0.4l-72,72C0.1,74.9,0,77.4,0,80c0,0.1,0,0.2,0,0.2L80.2,0
- C80.2,0,80.1,0,80,0z"></path>
-        </svg>
-      </div>
-      <div class="u-palette-1-base u-shape u-shape-circle u-shape-2 img_about"></div>
-      <div class="u-align-left u-container-style u-grey-5 u-group u-radius-20 u-shape-round u-group-1">
-        <div class="u-container-layout u-valign-middle u-container-layout-1">
-          <h3 class="u-text u-text-1">About Us</h3>
-          <p class="u-text u-text-2">Elit ut aliquam purus sit amet luctus venenatis. Ridiculus mus mauris vitae
-            ultricies leo integer malesuada. Massa enim nec dui nunc mattis enim. Sagittis vitae et leo duis ut. Lacus
-            suspendisse faucibus interdum.</p>
-
-          <a href="https://nicepage.best"
-            class="u-active-black u-border-none u-btn u-btn-round u-button-style u-hover-black u-palette-1-base u-radius-50 u-btn-2">learn
-            more</a>
+  <section class="about_us">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-12">
+          <div class="img">
+            <img src="images/about-3.jpg" alt="about">
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-12">
+          <div class="content">
+            <h2>About</h2>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
+              in some form, by injected humour, or randomised words which dont look even slightly believable. If you are
+              going to use a passage of Lorem Ipsum Ipsum available, but the majority have suffered alteration in some
+              form, by injected humour, or randomised words which dont look even slightly believable. If you are going.
+            </p>
+            <div class="row">
+              <div class="col-lg-6 col-12">
+                <h3>Who we are</h3>
+                <p>There are many vtions of passages of Lorem Ipsum available, but the majority have suffered.</p>
+              </div>
+              <div class="col-lg-6 col-12">
+                <h3>Who we are</h3>
+                <p>There are many vtions of passages of Lorem Ipsum available, but the majority have suffered.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <img class="u-image u-image-round u-radius-20 u-image-2" src="images/fdffffff-min.jpg" data-image-width="1100"
-        data-image-height="999">
     </div>
   </section>
   <!-- about us section -->

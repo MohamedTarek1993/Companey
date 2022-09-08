@@ -4,7 +4,7 @@
   --color-primary: #3739c2;
   --color-secound: #5b6152;
   --color-text: #1c2410;
-  --color-pargraph: rgba(29, 29, 36, 0.75);
+  --color-pargraph: #1d1b41;
 }
 
 @font-face {
@@ -2397,12 +2397,11 @@ textarea.form-control {
 }
 .contact_us .button .first:hover {
   background: transparent;
-    color: #f9004d;
-    box-shadow: 0 10px 15px 0 rgb(0 0 0 / 10%);
-    -webkit-transform: translateY(-5px);
-    transform: translateY(-5px);
-    border: 2px solid #f9004d;
-
+  color: #f9004d;
+  box-shadow: 0 10px 15px 0 rgb(0 0 0 / 10%);
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  border: 2px solid #f9004d;
 }
 
 .grid_information {
@@ -3403,6 +3402,10 @@ footer .footer_fir .inner .button .first:hover {
   right: 0;
   z-index: 1000;
 }
+.navbar.home {
+ position: relative;
+ background-image: var(--color-primary);
+}
 .navbar #navbarNavDropdown {
   padding-inline-start: 5%;
 }
@@ -3683,28 +3686,65 @@ footer .footer_fir .inner .button .first:hover {
   --webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
-.information_contact .rn-address .inner p:hover ,.information_contact .rn-address .inner p:hover a {
+.information_contact .rn-address .inner p:hover,
+.information_contact .rn-address .inner p:hover a {
   color: var(--color-primary);
 }
 .information_contact .rn-address .inner p a {
   color: var(--color-pargraph);
 }
-.contact_us{
+.contact_us {
   padding: 5% 0;
 }
-.contact_us .main_title{
+.contact_us .main_title {
   margin-bottom: 50px;
-text-align: left;
+  text-align: left;
 }
-.contact_us .main_title h1{
+.contact_us .main_title h1 {
   font-size: 3rem;
+  font-family: "bold";
+  color: var(--color-text);
+}
+.contact_us .main_title p {
+  font-size: 2rem;
+  color: var(--color-pargraph);
+}
+
+/* contact page */
+/* about us */
+.about_us{
+  position: relative;
+  padding: 5% 0;
+}
+.about_us .img{
+  width: 100%;
+  height: 650px;
+}
+.about_us .img img{
+  width: 100%;
+  height: 100%;
+}
+.about_us .content{
+  padding-top: 15%;
+}
+.about_us .content h2{
+  margin: 0 0 15px;
+  font-size: 3.9rem;
   font-family: 'bold';
   color: var(--color-text);
 }
-.contact_us .main_title p{
-  font-size: 2rem;
-  color: ;
+.about_us .content h4{
+  margin: 0 0 15px;
+  font-size: 1.3rem;
+  font-family: 'semibold';
+  color: var(--color-text);
 }
+.about_us .content p{
+color: var(--color-pargraph);
+font-size: 1.1rem;
+font-family: 'regular';
+line-height: 30px;
+margin: 0 0 15px;
 
-
-/* contact page */
+}
+/* about us */
