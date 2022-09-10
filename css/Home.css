@@ -81,22 +81,21 @@ p {
 /* scroll bar */
 
 .u-section-1 {
-  background-image: linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 0.2),
-      rgba(0, 0, 0, 0.2)
-    ),
-    url("images/jtjtjtjuy-min.jpg");
-  background-position: 50% 50%;
-  padding: 5% 0 15%;
+  background-color: rgba(108, 108, 115 ,0.04);
+   height: 100vh;
+  padding: 15% 0 8%;
 }
 
 .u-section-1 .u-text-1 {
   font-size: 6rem;
   font-weight: 700;
   margin: 5% 0;
+  color: var(--color-text) !important;
 }
-
+.auto-typed{
+  color: var(--color-primary) !important;
+  font-size: 5rem;
+}
 .u-section-1 .u-text-2 {
   margin: 19px 577px 0 0;
 }
@@ -3394,26 +3393,25 @@ footer .footer_fir .inner .button .first:hover {
 
 /* start navbar */
 .navbar {
-  background-color: rgba(141, 181, 83, 0.1);
-  position: relative;
+  /* background: rgba(255, 255, 255, 0.5); */
+  /* box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2); */
+  /* backdrop-filter: blur(10px); */
   position: absolute;
-  top: 10%;
+  top: 5%;
   left: 0;
   right: 0;
   z-index: 1000;
 }
 .navbar.home {
  position: relative;
- background-image: var(--color-primary);
+ background-color: rgba(108, 108, 115,0.04);
 }
 .navbar #navbarNavDropdown {
   padding-inline-start: 5%;
 }
 .navbar .navbar-brand {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  color: seagreen;
+  width: 365px;
+  height: 91px;
 }
 .navbar .navbar-brand img {
   width: 100%;
@@ -3463,7 +3461,7 @@ footer .footer_fir .inner .button .first:hover {
 .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
   font-size: 1.3rem;
   font-family: "regular";
-  color: var(--color-white);
+  color: var(--color-text);
   padding-right: 1.3rem;
   padding-left: 1.3rem;
   position: relative;
