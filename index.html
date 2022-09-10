@@ -17,7 +17,7 @@
   <!-- swiper -->
   <link rel="stylesheet" href="css/swiper-demos.css">
   <!-- swiper -->
-  <link rel="stylesheet" href="css/nicepage.css" media="screen">
+  <!-- <link rel="stylesheet" href="css/nicepage.css" media="screen"> -->
 
   <!-- css var -->
 
@@ -35,41 +35,46 @@
 </head>
 
 <body data-home-page="Home.html" data-home-page-title="Home">
-
+  <!---------------------- start loader -------------------------------------------->
+  <div id="preloader"></div>
+  <!---------------------- finish loader -------------------------------------------->
+  <!---------------------- start scroll-up -------------------------------------------->
+  <a id="button" class="scroll-up"><i class="bi bi-chevron-up"></i></a>
+  <!---------------------- finish scroll-up -------------------------------------------->
   <!---------------------- stikey header ---------------------->
-  <!-- <div class="stikey-header">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-12">
-          <ul class="social d-flex">
-            <li> <a href="#"> <i class="bi bi-facebook" style="font-size:1.3rem ;"></i></a></li>
-            <li> <a href="#"><i class="bi bi-messenger px-3" style="font-size:1.3rem; "></i></a></li>
-            <li> <a href="#"><i class="bi bi-whatsapp" style="font-size:1.3rem; "></i></a></li>
-            <li> <a href="#"><i class="bi bi-twitter px-3" style="font-size:1.3rem; "></i></a></li>
-          </ul>
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-12">
-          <div class="connection d-flex justify-content-end text-align-center ">
-            <div class="adress ">
+    <div class="stikey-header" data-aos="fade-up" data-aos-duration="1500" data-aos-easing="linear">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <ul class="social d-flex">
+                        <li> <a href="#"> <i class="bi bi-facebook"></i></a></li>
+                        <li> <a href="#"><i class="bi bi-messenger "></i></a></li>
+                        <li> <a href="#"><i class="bi bi-whatsapp"></i></a></li>
+                        <li> <a href="#"><i class="bi bi-twitter "></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="connection d-flex justify-content-end text-align-center ">
+                        <div class="adress ">
 
-              <a href="mailto:someone@yoursite.com"> mt7899@gmail <i class="bi bi-envelope"></i></a>
-            </div>
-            <div class="adress  ">
+                            <a href="mailto:someone@yoursite.com"> mt7899@gmail <i class="bi bi-envelope"></i></a>
+                        </div>
+                        <div class="adress  ">
 
-              <a href="tel:01093140277"> 0109654245125414 <i class="bi bi-telephone"></i></a>
+                            <a href="tel:01093140277"> 0109654245125414 <i class="bi bi-telephone"></i></a>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-    </div>
-  </div> -->
-  <!---------------------- stikey header ---------------------->
+    </div> 
+    <!---------------------- stikey header ---------------------->
   <!---------------------- navbar ---------------------->
-  <nav class="navbar home navbar-expand-lg" id="navbar">
+  <nav class="navbar home navbar-expand-lg" id="navbar" data-aos="fade-up" data-aos-duration="1500" data-aos-easing="linear">
     <div class="container">
       <a class="navbar-brand" href="index.html">
-        <img src="images/logo2 (2).png" alt="logo"> 
-    
+        <img src="images/logo2 (2).png" alt="logo">
+
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -81,7 +86,7 @@
             <a class="nav-link active" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="about.html"> About Us</a>
+            <a class="nav-link" href="#about"> About Us</a>
           </li>
           <li class="nav-item" onmouseenter="showDrop(1)" onmouseleave="hideDrop(1)">
             <a class="nav-link" href="#"> Projects
@@ -121,40 +126,29 @@
       </div>
     </div>
   </nav>
-
-  <!---------------------- navbar ---------------------->
-
-  <!-- hero section -->
-  <section class="u-align-right u-clearfix u-image u-shading u-section-1" id="carousel_2dd1">
+  <section class="header_proj home" style="background-image: url(/images/header.jpg)!important;" background-repeat:
+    no-repeat; background-size: cover; background-position: 50%;>
     <div class="container">
-      <div class="row">
-        <div class="col-lg-6 col-12">
-          <h1 class="u-align-left u-custom-font u-font-oswald u-text u-text-body-alt-color u-text-1">We Provide <span
-              class="auto-typed"></span>
-          </h1>
-        </div>
-        <div class="col-lg-6 col-12">
-          <div class="img">
-            <img src="" alt="">
-          </div>
-        </div>
+      <div class="content" data-aos="fade-up" data-aos-duration="1500" data-aos-easing="linear">
+        <h5>Let's Make Something Creative</h5>
+        <h1 ><span class="auto-typed"></span> </h1>
+        <div class="button"> <a class="btn first" href="#projects"> Check Our Projects</a></div>
       </div>
     </div>
+
   </section>
-  <!-- hero section -->
-
-
+  <!---------------------- navbar ---------------------->
 
   <!-- about us section -->
-  <section class="about_us">
+  <section class="about_us" id="about">
     <div class="container">
       <div class="row">
-        <div class="col-lg-6 col-md-6 col-12">
+        <div class="col-lg-6 col-md-6 col-12" data-aos="fade-right" data-aos-duration="1500" data-aos-easing="linear">
           <div class="img">
             <img src="images/about-3.jpg" alt="about">
           </div>
         </div>
-        <div class="col-lg-6 col-md-6 col-12">
+        <div class="col-lg-6 col-md-6 col-12" data-aos="fade-left" data-aos-duration="1500" data-aos-easing="linear">
           <div class="content">
             <h2>About</h2>
             <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
@@ -180,7 +174,7 @@
   <!-- about us section -->
 
   <!-- service sec -->
-  <section class="service_section" data-aos="fade-up" data-aos-duration="1500" data-aos-easing="linear">
+  <section class="service_section">
     <div class="container">
       <div class="main_title">
         <h2 class="u-text u-text-1">Strategy</h2>
@@ -222,84 +216,8 @@
   </section>
   <!-- service sec -->
 
-  <section data-aos="fade-up" data-aos-duration="2000" data-aos-easing="linear"
-    class="u-align-center-lg u-align-center-md u-align-center-xl u-align-left-sm u-align-left-xs u-clearfix u-grey-5 u-section-2"
-    id="carousel_54c0">
-    <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
-      <h2 class="u-text u-text-1"> We create super-awesome designs</h2>
-      <p class="u-text u-text-2"> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-        nulla pariatur. Excepteur sint occaecat cupidatat non proident. </p>
-      <div class="u-expanded-width u-list u-list-1">
-        <div class="container">
-          <div class="row">
-
-            <div class="col-lg-6 col-md-6 col-12" data-aos="fade-right" data-aos-duration="1500"
-              data-aos-easing="linear">
-              <div
-                class="u-align-left u-container-style u-list-item u-radius-20 u-repeater-item u-shape-round u-white ">
-                <div class="u-container-layout u-similar-container u-container-layout-1"><span
-                    class="u-file-icon u-icon u-icon-circle u-palette-1-base u-text-white u-icon-1"><img
-                      src="images/1828743-b773816f.png" alt=""></span>
-                  <h5 class="u-custom-font u-text u-text-font u-text-3">Amazing Design</h5>
-                  <p class="u-text u-text-4">Sample text. Click to select the text box. Click again or double click to
-                    start
-                    editing the text.</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-6 col-md-6 col-12" data-aos="fade-left" data-aos-duration="1500"
-              data-aos-easing="linear">
-              <div
-                class="u-align-left u-container-style u-list-item u-radius-20 u-repeater-item u-shape-round u-white ">
-                <div class="u-container-layout u-similar-container u-container-layout-2"><span
-                    class="u-file-icon u-icon u-icon-circle u-palette-1-base u-text-white u-icon-2"><img
-                      src="images/1828743-b773816f.png" alt=""></span>
-                  <h5 class="u-custom-font u-text u-text-font u-text-5">Copywriting</h5>
-                  <p class="u-text u-text-6">Sample text. Click to select the text box. Click again or double click to
-                    start
-                    editing the text.</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-6 col-md-6 col-12" data-aos="fade-right" data-aos-duration="1500"
-              data-aos-easing="linear">
-              <div
-                class="u-align-left u-container-style u-list-item u-radius-20 u-repeater-item u-shape-round u-white ">
-                <div class="u-container-layout u-similar-container u-container-layout-3"><span
-                    class="u-file-icon u-icon u-icon-circle u-palette-1-base u-text-white u-icon-3"><img
-                      src="images/1828743-b773816f.png" alt=""></span>
-                  <h5 class="u-custom-font u-text u-text-font u-text-7">Development</h5>
-                  <p class="u-text u-text-8">Sample text. Click to select the text box. Click again or double click to
-                    start
-                    editing the text.</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-6 col-md-6 col-12" data-aos="fade-left" data-aos-duration="1500"
-              data-aos-easing="linear">
-              <div
-                class="u-align-left u-container-style u-list-item u-radius-20 u-repeater-item u-shape-round u-white ">
-                <div class="u-container-layout u-similar-container u-container-layout-4"><span
-                    class="u-file-icon u-icon u-icon-circle u-palette-1-base u-text-white u-icon-4"><img
-                      src="images/1828743-b773816f.png" alt=""></span>
-                  <h5 class="u-custom-font u-text u-text-font u-text-9">24/7 Support</h5>
-                  <p class="u-text u-text-10">Sample text. Click to select the text box. Click again or double click to
-                    start editing the text.</p>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!--  portfolio sec -->
-  <section class="portfolio_section" data-aos="fade-up" data-aos-duration="1500" data-aos-easing="linear">
+  <section class="portfolio_section" >
     <div class="container">
       <div class="main_title">
         <h2 class="u-text u-text-1">Creative Protfolio </h2>
@@ -463,7 +381,7 @@
   <!--  portfolio sec -->
 
   <!-- our team -->
-  <section class="our_team" data-aos="fade-right" data-aos-duration="1500" data-aos-easing="linear">
+  <section class="our_team" >
     <div class="container">
       <div class="main_title">
         <h2 class="u-text u-text-1">Effective Teams </h2>
@@ -476,10 +394,33 @@
           <div class="swiper-slide">
             <div class="box_testiomnies">
               <div class="img">
-                <img src="images/test1.png" alt="test">
+                <img src="images/team-01.jpg" alt="test">
               </div>
-              <h4>Ahmed Ali</h4>
-              <span>Manager</span>
+              <div class="inner">
+                <h4>Ahmed Ali</h4>
+                <span>Manager</span>
+              </div>
+            
+              <div class="social_icons">
+                <li> <a href="#" target="_blank"> <i class="bi bi-facebook"></i></a></li>
+                <li> <a href="#" target="_blank"><i class="bi bi-youtube"></i> </a></li>
+                <li> <a href="#" target="_blank"> <i class="bi bi-linkedin"></i></a></li>
+                <li> <a href="#" target="_blank"><i class="bi bi-messenger"></i> </a></li>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="box_testiomnies">
+              <div class="img">
+                <img src="images/team-03.jpg" alt="test">
+              </div>
+              <div class="inner">
+                <h4>Ahmed Ali</h4>
+                <span>Manager</span>
+              </div>
+             
 
               <div class="social_icons">
                 <li> <a href="#" target="_blank"> <i class="bi bi-facebook"></i></a></li>
@@ -494,28 +435,13 @@
           <div class="swiper-slide">
             <div class="box_testiomnies">
               <div class="img">
-                <img src="images/test1.png" alt="test">
+                <img src="images/team-04.jpg" alt="test">
               </div>
-              <h4>Ahmed Ali</h4>
-              <span>Manager</span>
-
-              <div class="social_icons">
-                <li> <a href="#" target="_blank"> <i class="bi bi-facebook"></i></a></li>
-                <li> <a href="#" target="_blank"><i class="bi bi-youtube"></i> </a></li>
-                <li> <a href="#" target="_blank"> <i class="bi bi-linkedin"></i></a></li>
-                <li> <a href="#" target="_blank"><i class="bi bi-messenger"></i> </a></li>
+              <div class="inner">
+                <h4>Ahmed Ali</h4>
+                <span>Manager</span>
               </div>
-
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div class="box_testiomnies">
-              <div class="img">
-                <img src="images/test1.png" alt="test">
-              </div>
-              <h4>Ahmed Ali</h4>
-              <span>Manager</span>
+             
 
               <div class="social_icons">
                 <li> <a href="#" target="_blank"> <i class="bi bi-facebook"></i></a></li>
@@ -536,301 +462,118 @@
   </section>
   <!-- our team -->
 
-  <!-- testiomnies -->
-  <section data-aos="fade-up" data-aos-duration="1500" data-aos-easing="linear"
-    class="u-align-center u-clearfix u-grey-5 u-section-7 testiomnies_section" id="carousel_400d">
-    <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
-      <div class="main_title">
-        <h2 class="u-text u-text-default u-text-1"> How We Help People</h2>
-        <p class="u-text u-text-2"> With serious savings, a seamless online application, and unique community benefits,
-          our members have a lot to say about our loans!</p>
-      </div>
 
-      <div class="u-expanded-width u-list u-list-1">
-        <div class="u-repeater u-repeater-1">
-          <div data-aos="fade-right" data-aos-duration="1500" data-aos-easing="linear"
-            class="u-container-style u-list-item u-repeater-item">
-            <div class="u-container-layout u-similar-container u-valign-top-sm u-valign-top-xs u-container-layout-1">
-              <div
-                class="u-border-1 u-border-palette-1-base u-container-style u-expanded-width u-group u-palette-1-base u-radius-20 u-shape-round u-group-1">
-                <div class="u-container-layout u-valign-top u-container-layout-2"><span
-                    class="u-file-icon u-icon u-text-white u-icon-1"><img src="images/2087858-7c19edfa.png"
-                      alt=""></span>
-                  <p class="u-text u-text-3"> Article evident arrived express highest men did boy. Mistress sensible
-                    entirely am so. Quick can manor smart money hopes worth too. Comfort produce husband boy her had
-                    hearing.</p>
+  <!-- finish content informationm -->
+  <section class="contact_us">
+    <div class="container">
+        <div class="main_title">
+            <h1>Contact Us.
+            </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto cupiditate aperiam neque.</p>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-12">
+                <div class="u-form u-form-1">
+                    <form action="//publish.nicepage.com/Form/Process" method="POST"
+                        class="u-clearfix u-form-spacing-30 u-form-vertical u-inner-form" style="padding: 10px"
+                        source="email" name="form">
+                        <div class="input-group">
+                            <label for="email-319a" class="form-label">Email</label>
+                            <input type="email" placeholder="Enter a valid email address" id="email-319a"
+                                name="email" class="form-control" required="">
+                        </div>
+                        <div class="input-group">
+                            <label for="name-319a" class="form-label">Name</label>
+                            <input type="text" placeholder="Enter your Name" id="name-319a" name="name"
+                                class="form-control" required="">
+                        </div>
+                        <div class="input-group">
+                            <label for="message-319a" class="form-label">Message</label>
+                            <textarea placeholder="Enter your message" rows="4" cols="50" id="message-319a"
+                                name="message" class="form-control" required=""></textarea>
+                        </div>
+                        <div class="button">
+                            <a href="#" class="first btn">Submit</a>
+                        </div>
+
+                    </form>
                 </div>
-              </div>
-              <div class="u-border-3 u-border-palette-1-base u-image u-image-circle u-image-1" alt=""
-                data-image-width="1000" data-image-height="876">
-                <img src="images/test1.png" alt="">
-              </div>
-              <h6 class="u-custom-font u-font-montserrat u-text u-text-4">May Smith</h6>
             </div>
-          </div>
-          <div data-aos="fade-up" data-aos-duration="1500" data-aos-easing="linear"
-            class="u-container-style u-list-item u-repeater-item">
-            <div class="u-container-layout u-similar-container u-valign-top-sm u-valign-top-xs u-container-layout-3">
-              <div
-                class="u-border-1 u-border-palette-1-base u-container-style u-expanded-width u-group u-palette-1-base u-radius-20 u-shape-round u-group-2">
-                <div class="u-container-layout u-valign-top u-container-layout-4"><span
-                    class="u-file-icon u-icon u-text-white u-icon-2"><img src="images/2087858-7c19edfa.png"
-                      alt=""></span>
-                  <p class="u-text u-text-default u-text-5"> Article evident arrived express highest men did boy.
-                    Mistress sensible entirely am so. Quick can manor smart money hopes worth too. Comfort produce
-                    husband boy her had hearing.</p>
+            <div class="col-lg-6 col-12">
+                <div class="img">
+                    <img class="w-100 h-100" src="images/about-6.jpg" alt="contact">
                 </div>
-              </div>
-              <div class="u-border-3 u-border-palette-1-base u-image u-image-circle u-image-2" alt=""
-                data-image-width="720" data-image-height="1080">
-
-                <img src="images/test1.png" alt="">
-              </div>
-              <h6 class="u-custom-font u-font-montserrat u-text u-text-6">Bob Perry</h6>
             </div>
-          </div>
-          <div data-aos="fade-left" data-aos-duration="1500" data-aos-easing="linear"
-            class="u-container-style u-list-item u-repeater-item">
-            <div class="u-container-layout u-similar-container u-valign-top-sm u-valign-top-xs u-container-layout-5">
-              <div
-                class="u-border-1 u-border-palette-1-base u-container-style u-expanded-width u-group u-palette-1-base u-radius-20 u-shape-round u-group-3">
-                <div class="u-container-layout u-valign-top u-container-layout-6"><span
-                    class="u-file-icon u-icon u-text-white u-icon-3"><img src="images/2087858-7c19edfa.png"
-                      alt=""></span>
-                  <p class="u-text u-text-default u-text-7"> Article evident arrived express highest men did boy.
-                    Mistress sensible entirely am so. Quick can manor smart money hopes worth too. Comfort produce
-                    husband boy her had hearing.</p>
-                </div>
-              </div>
-              <div class="u-border-3 u-border-palette-1-base u-image u-image-circle u-image-3" alt=""
-                data-image-width="800" data-image-height="766">
-                <img src="images/test1.png" alt="">
-              </div>
-              <h6 class="u-custom-font u-font-montserrat u-text u-text-8">Marry Hudson</h6>
-            </div>
-          </div>
         </div>
-      </div>
-
     </div>
-  </section>
-  <!-- testiomnies -->
-
-  <!-- conatct us -->
-  <section class="u-clearfix u-palette-1-base u-section-9" id="carousel_8571">
-    <div class="u-expanded-width u-grey-5 u-shape u-shape-rectangle u-shape-1"></div>
-    <div class="u-list u-list-1">
-      <div class="grid_information">
-
-        <div data-aos="slide-right" data-aos-duration="1500" data-aos-easing="linear"
-          class="u-align-center u-container-style u-list-item u-radius-20 u-repeater-item u-shape-round u-white u-list-item-1">
-          <div class="u-container-layout u-similar-container u-valign-top u-container-layout-1"><span
-              class="u-icon u-icon-circle u-text-palette-1-base u-icon-1"><svg class="u-svg-link"
-                preserveAspectRatio="xMidYMin slice" viewBox="0 0 52 52" style="">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-077e"></use>
-              </svg><svg class="u-svg-content" viewBox="0 0 52 52" x="0px" y="0px" id="svg-077e"
-                style="enable-background:new 0 0 52 52;">
-                <path style="fill:currentColor;" d="M38.853,5.324L38.853,5.324c-7.098-7.098-18.607-7.098-25.706,0h0
-	C6.751,11.72,6.031,23.763,11.459,31L26,52l14.541-21C45.969,23.763,45.249,11.72,38.853,5.324z M26.177,24c-3.314,0-6-2.686-6-6
-	s2.686-6,6-6s6,2.686,6,6S29.491,24,26.177,24z"></path>
-              </svg></span>
-            <h4 class="u-text u-text-1">our main office</h4>
-            <p class="u-text u-text-2">SoHo 94 Broadway St New York, NY 1001</p>
-          </div>
-        </div>
-
-        <div data-aos="slide-up" data-aos-duration="1500" data-aos-easing="linear"
-          class="u-align-center u-container-style u-list-item u-radius-20 u-repeater-item u-shape-round u-white u-list-item-2">
-          <div class="u-container-layout u-similar-container u-valign-top u-container-layout-2"><span
-              class="u-icon u-icon-circle u-text-palette-1-base u-icon-2"><svg class="u-svg-link"
-                preserveAspectRatio="xMidYMin slice" viewBox="0 0 513.64 513.64" style="">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-9786"></use>
-              </svg><svg class="u-svg-content" viewBox="0 0 513.64 513.64" x="0px" y="0px" id="svg-9786"
-                style="enable-background:new 0 0 513.64 513.64;">
-                <g>
-                  <g>
-                    <path
-                      d="M499.66,376.96l-71.68-71.68c-25.6-25.6-69.12-15.359-79.36,17.92c-7.68,23.041-33.28,35.841-56.32,30.72    c-51.2-12.8-120.32-79.36-133.12-133.12c-7.68-23.041,7.68-48.641,30.72-56.32c33.28-10.24,43.52-53.76,17.92-79.36l-71.68-71.68    c-20.48-17.92-51.2-17.92-69.12,0l-48.64,48.64c-48.64,51.2,5.12,186.88,125.44,307.2c120.32,120.32,256,176.641,307.2,125.44    l48.64-48.64C517.581,425.6,517.581,394.88,499.66,376.96z">
-                    </path>
-                  </g>
-                </g>
-              </svg></span>
-            <h4 class="u-text u-text-3">phone number</h4>
-            <p class="u-text u-text-4">234-9876-5400 <br>888-0123-4567 (Toll Free)
-            </p>
-          </div>
-        </div>
-
-        <div data-aos="slide-left" data-aos-duration="1500" data-aos-easing="linear"
-          class="u-align-center u-container-style u-list-item u-radius-20 u-repeater-item u-shape-round u-white u-list-item-4">
-          <div class="u-container-layout u-similar-container u-valign-top u-container-layout-4"><span
-              class="u-icon u-icon-circle u-text-palette-1-base u-icon-4"><svg class="u-svg-link"
-                preserveAspectRatio="xMidYMin slice" viewBox="0 0 512 512" style="">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-9f82"></use>
-              </svg><svg class="u-svg-content" viewBox="0 0 512 512" x="0px" y="0px" id="svg-9f82"
-                style="enable-background:new 0 0 512 512;">
-                <g>
-                  <g>
-                    <path
-                      d="M507.49,101.721L352.211,256L507.49,410.279c2.807-5.867,4.51-12.353,4.51-19.279V121    C512,114.073,510.297,107.588,507.49,101.721z">
-                    </path>
-                  </g>
-                </g>
-                <g>
-                  <g>
-                    <path
-                      d="M467,76H45c-6.927,0-13.412,1.703-19.279,4.51l198.463,197.463c17.548,17.548,46.084,17.548,63.632,0L486.279,80.51    C480.412,77.703,473.927,76,467,76z">
-                    </path>
-                  </g>
-                </g>
-                <g>
-                  <g>
-                    <path
-                      d="M4.51,101.721C1.703,107.588,0,114.073,0,121v270c0,6.927,1.703,13.413,4.51,19.279L159.789,256L4.51,101.721z">
-                    </path>
-                  </g>
-                </g>
-                <g>
-                  <g>
-                    <path
-                      d="M331,277.211l-21.973,21.973c-29.239,29.239-76.816,29.239-106.055,0L181,277.211L25.721,431.49    C31.588,434.297,38.073,436,45,436h422c6.927,0,13.412-1.703,19.279-4.51L331,277.211z">
-                    </path>
-                  </g>
-                </g>
-              </svg></span>
-            <h4 class="u-text u-text-7">Email</h4>
-            <p class="u-text u-text-8">
-              <a href="mailto:hello@theme.com"
-                class="u-active-none u-border-1 u-border-hover-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-border-palette-1-base u-bottom-left-radius-0 u-bottom-right-radius-0 u-btn u-button-link u-button-style u-hover-none u-none u-radius-0 u-text-palette-1-base u-top-left-radius-0 u-top-right-radius-0 u-btn-1">hello@theme.com</a>
-            </p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-    <div class="u-clearfix u-layout-wrap u-layout-wrap-1 contact_us">
-      <div class="u-layout">
-        <div class="u-layout-row">
-          <div class="u-align-left u-container-style u-layout-cell u-left-cell u-size-30 u-layout-cell-1">
-            <div class="u-container-layout u-container-layout-5">
-              <h2>Get in touch</h2>
-              <h6>We can ensure reliability, low cost fares and most
-                important, with safety and comfort in mind.</h6>
-              <p>Etiam sit amet convallis erat – class aptent taciti sociosqu ad litora
-                torquent per conubia! Maecenas gravida lacus. Lorem etiam sit amet convallis erat.</p>
-              <ul class="social_links">
-                <li> <a href="#" target="_blank"> <i class="bi bi-facebook"></i></a></li>
-                <li> <a href="#" target="_blank"><i class="bi bi-youtube"></i> </a></li>
-                <li> <a href="#" target="_blank"> <i class="bi bi-linkedin"></i></a></li>
-                <li> <a href="#" target="_blank"><i class="bi bi-messenger"></i> </a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="u-container-style u-layout-cell u-right-cell u-size-30 u-layout-cell-2">
-            <div class="u-container-layout u-valign-top u-container-layout-6">
-              <div class="u-form u-form-1">
-                <form action="//publish.nicepage.com/Form/Process" method="POST"
-                  class="u-clearfix u-form-spacing-30 u-form-vertical u-inner-form" style="padding: 10px" source="email"
-                  name="form">
-                  <div class="input-group">
-                    <label for="email-319a" class="form-label">Email</label>
-                    <input type="email" placeholder="Enter a valid email address" id="email-319a" name="email"
-                      class="form-control" required="">
-                  </div>
-                  <div class="input-group">
-                    <label for="name-319a" class="form-label">Name</label>
-                    <input type="text" placeholder="Enter your Name" id="name-319a" name="name" class="form-control"
-                      required="">
-                  </div>
-                  <div class="input-group">
-                    <label for="message-319a" class="form-label">Message</label>
-                    <textarea placeholder="Enter your message" rows="4" cols="50" id="message-319a" name="message"
-                      class="form-control" required=""></textarea>
-                  </div>
-                  <div class="button">
-                    <a href="#" class="first btn">Submit</a>
-                    <input type="submit" value="submit" class="u-form-control-hidden">
-                  </div>
-                  <div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent. </div>
-                  <div class="u-form-send-error u-form-send-message"> Unable to send your message. Please fix errors
-                    then try again. </div>
-                  <input type="hidden" value="" name="recaptchaResponse">
-                  <input type="hidden" name="formServices" value="1bddd3368c98251c198cec6bf676fa95">
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- conatct us -->
+</section>
+<!-- finish content -->
 
   <footer>
     <div class="container-fluid px-0">
-        <div class="row align-items-end row--0">
-            <div class="col-lg-6 col-md-6 col-12 px-0">
-                <div class="footer_fir">
-                    <div class="inner">
-                        <h6>Ready To Do This</h6>
-                        <h2>Let's get <br> to work</h2>
-                        <div class="button">
-                            <a class="btn first" href="contact-us.html"> Contact Us</a>
-                        </div>
+      <div class="row align-items-end row--0">
+        <div class="col-lg-6 col-md-6 col-12 px-0">
+          <div class="footer_fir">
+            <div class="inner">
+              <h6>Ready To Do This</h6>
+              <h2>Let's get <br> to work</h2>
+              <div class="button">
+                <a class="btn first" href="contact-us.html"> Contact Us</a>
+              </div>
 
-                    </div>
-                </div>
             </div>
-            <div class="col-lg-6 col-md-6 col-12 px-0">
-                <div class="footer_sec">
-                    <div class="row">
-                        <div class="col-lg-6 col-sm-12">
-                            <h4 class="head_footer">
-                                Quick Link
-                            </h4>
-                            <ul>
-                                <li><a target="_blank" href="about.html"> About Us</a></li>
-                                <li><a target="_blank" href="project.html"> Work</a></li>
-                                <li><a target="_blank" href="service.html"> Service</a></li>
-
-                            </ul>
-                        </div>
-                        <div class="col-lg-6 col-sm-12">
-
-                            <h4 class="head_footer">
-                                Say Hello
-                            </h4>
-                            <ul>
-
-
-                                <li> <a class="parg" href="tel:01093140277"> 0109654245125414 </a>
-                                </li>
-                                <li> <a class="parg" href="mailto:someone@yoursite.com"> mt7899@gmail
-                                    </a></li>
-                                <li>
-                                    <ul class="social_icons">
-                                        <li> <a href="#"> <i class="bi bi-facebook"></i></a></li>
-                                        <li> <a href="#"><i class="bi bi-messenger "></i></a></li>
-                                        <li> <a href="#"><i class="bi bi-whatsapp"></i></a></li>
-                                        <li> <a href="#"><i class="bi bi-twitter "></i></a></li>
-                                    </ul>
-                                </li>
-
-                            </ul>
-                        </div>
-                        <div class="col-12">
-                            <div class="copy_rights">
-                                <p>Copyright © 2022 Bracktely. All Rights Reserved.</p>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+        <div class="col-lg-6 col-md-6 col-12 px-0">
+          <div class="footer_sec">
+            <div class="row">
+              <div class="col-lg-6 col-sm-12">
+                <h4 class="head_footer">
+                  Quick Link
+                </h4>
+                <ul>
+                  <li><a target="_blank" href="about.html"> About Us</a></li>
+                  <li><a target="_blank" href="project.html"> Work</a></li>
+                  <li><a target="_blank" href="service.html"> Service</a></li>
+
+                </ul>
+              </div>
+              <div class="col-lg-6 col-sm-12">
+
+                <h4 class="head_footer">
+                  Say Hello
+                </h4>
+                <ul>
+
+
+                  <li> <a class="parg" href="tel:01093140277"> 0109654245125414 </a>
+                  </li>
+                  <li> <a class="parg" href="mailto:someone@yoursite.com"> mt7899@gmail
+                    </a></li>
+                  <li>
+                    <ul class="social_icons">
+                      <li> <a href="#"> <i class="bi bi-facebook"></i></a></li>
+                      <li> <a href="#"><i class="bi bi-messenger "></i></a></li>
+                      <li> <a href="#"><i class="bi bi-whatsapp"></i></a></li>
+                      <li> <a href="#"><i class="bi bi-twitter "></i></a></li>
+                    </ul>
+                  </li>
+
+                </ul>
+              </div>
+              <div class="col-12">
+                <div class="copy_rights">
+                  <p>Copyright © 2022 Bracktely. All Rights Reserved.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
 
     </div>
-</footer>
+  </footer>
 
 
   <!-- js var -->
